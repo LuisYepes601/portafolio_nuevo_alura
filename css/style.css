@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color_principal: #F5F5F5;
+    --font: Raleway;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    grid-template-areas:
+        "header"
+        "presentacion"
+        "sobre_mi"
+        "habilidades"
+        "hobbies"
+        "formacion_academica"
+        "experiencia__profesional"
+        "contacto"
+        "footer";
+
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--color_principal);
+    font-family: var(--font);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.header__mi_nombre,
+.header__menu_navegacion__contacto {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    padding-right: 1rem;
+}
+
+.header_contenido_mi_nombre {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-left: .5rem;
+}
+
+.header__menu_navegacion ul {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.header__menu_navegacion ul li {
+    list-style: none;
+}
+
+.header__menu_navegacion a {
+    text-decoration: none;
+}
