@@ -6,7 +6,9 @@
 
 :root {
     --color_principal: #F5F5F5;
+    --color-secundariio: #EAF2FD;
     --font: Raleway;
+    --color_texto: #464646;
 }
 
 .contenido {
@@ -23,6 +25,7 @@
         "experiencia__profesional"
         "contacto"
         "footer";
+    font-family: var(--font);
 
 }
 
@@ -30,7 +33,7 @@
     grid-area: header;
     background-color: var(--color_principal);
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: clamp(.8rem, 3vw, 1rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,4 +67,128 @@
 
 .header__menu_navegacion a {
     text-decoration: none;
+}
+
+.presentacion {
+    grid-area: presentacion;
+    background-color: var(--color_principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 3rem 1rem;
+    font-family: var(--font);
+}
+
+.presentacion_contenido {
+    max-width: 70%;
+}
+
+.presentacion_contenido h2 {
+    /* font-size: 52px;*/
+    font-size: clamp(2rem, 4vw, 52px);
+
+
+}
+
+.presentacion_contenido p {
+    padding-top: 1rem;
+    font-size: clamp(16px, 2vw, 22px);
+}
+
+.presentacion_contenido li {
+    display: flex;
+    gap: 1rem;
+}
+
+.presentacion_contenido a {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 1rem;
+
+}
+
+.imagen_principal {
+    width: 360px;
+    max-width: 100%;
+
+}
+
+.sobre_mi {
+    grid-area: sobre_mi;
+    background-color: var(--color-secundariio);
+    padding: 1rem;
+    font-size: clamp(16px, 2vw, 22px);
+}
+
+.sobre_mi h2 {
+    margin: 2rem 0 1rem 0;
+    color: #464646;
+    font-size: clamp(1.2rem, 3vw, 32px);
+}
+
+.habilidades {
+    background-color: var(--color_principal);
+    padding: 1rem;
+}
+
+.skills,
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.skills__titulo,
+.hobbies h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: clamp(1.2rem, 3vw, 32px);
+    color: #464646;
+}
+
+.hobbies h2 {
+    margin-top: 3rem;
+}
+
+.skills ul,
+.hobbies ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+
+}
+
+.skills ul li img,
+.hobbies ul li img {
+    width: 176;
+    max-width: 100%;
+}
+
+.formacion_academica {
+    grid-area: formacion_academica;
+    background-color: var(--color-secundariio);
+}
+
+.formacion_academica__titulo {
+    margin-top: 3rem;
+    color: var(--color_texto);
+}
+
+.experiencia__profesional {
+    grid-area: experiencia__profesional;
+    background-color: black;
+}
+
+.contacto {
+    grid-area: contacto;
+    background-color: aqua;
+}
+
+.footer {
+    grid-area: footer;
 }
