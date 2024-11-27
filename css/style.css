@@ -172,16 +172,61 @@
 .formacion_academica {
     grid-area: formacion_academica;
     background-color: var(--color-secundariio);
+    padding-bottom: 3rem;
 }
 
 .formacion_academica__titulo {
     margin-top: 3rem;
+    margin-bottom: 1rem;
     color: var(--color_texto);
+    text-align: center;
+}
+
+.formacion_academica__lista ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.formacion_academica__lista li {
+    text-align: start;
+}
+
+.formacion_academica__lista ul li img {
+    width: 368;
+    max-width: 100%;
 }
 
 .experiencia__profesional {
     grid-area: experiencia__profesional;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_principal);
+    align-items: center;
+    padding: 1rem;
+
+
+}
+
+.experiencia__profesional__titulo {
+    color: var(--color_texto);
+    padding: 1rem 0;
+    text-align: center;
+
+}
+
+.experiencia__profesional_encriptador__contenido {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experiencia__profesional_encriptador__contenido img {
+    width: 752px;
+    max-width: 100%;
 }
 
 .contacto {
