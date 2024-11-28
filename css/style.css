@@ -360,7 +360,10 @@
 }
 
 @media (max-width: 340px) {
-    .hobbies ul li img, .skills ul li img{
-       width: 105px;
+
+    .hobbies ul li img,
+    .skills ul li img {
+        width: 100px;
+
     }
 }
