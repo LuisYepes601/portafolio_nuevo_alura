@@ -327,6 +327,7 @@
     .hobbies ul {
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0;
     }
 
     .botones {
@@ -349,9 +350,17 @@
 }
 
 @media (max-width:591px) {
-    .presentacion{
+    .presentacion {
         flex-direction: column-reverse;
-    }.presentacion_contenido li {
+    }
+
+    .presentacion_contenido li {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 340px) {
+    .hobbies ul li img, .skills ul li img{
+       width: 116px;
     }
 }
