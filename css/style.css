@@ -202,12 +202,13 @@
 
 .experiencia__profesional {
     grid-area: experiencia__profesional;
+    background-color: var(--color_principal);
     display: flex;
     flex-direction: column;
-    background-color: var(--color_principal);
     align-items: center;
+    width: 100%;
+    gap: 2rem;
     padding: 1rem;
-
 
 }
 
@@ -215,18 +216,54 @@
     color: var(--color_texto);
     padding: 1rem 0;
     text-align: center;
+    font-size: clamp(1.2rem, 3vw, 32px);
 
 }
 
-.experiencia__profesional_encriptador__contenido {
+.experiencia__profesional_encriptador__contenido,
+.experiencia__profesional_juego__logica__contenido {
+    text-align: center;
+
+}
+
+.experiencia__profesional_encriptador__contenido__texto,
+.experiencia__profesional_juego__logica_texto {
+    margin-top: 1rem;
+}
+
+.experiencia__profesional_encriptador__contenido img,
+.experiencia__profesional_juego__logica__contenido img {
+    width: 752px;
+    max-width: 100%;
+}
+
+.experiencia__profesional_encriptador__contenido__titulo,
+.experiencia__profesional_juego__logica_texto__descripcion {
+    color: #464646;
+    font-weight: 700;
+}
+
+.experiencia__profesional_encriptador__contenido__titulo__subtitulo,.experiencia__profesional_juego__logica_texto__subtitulo {
+    font-size: 14px;
+    margin-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.botones {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    padding: 1rem;
     gap: 1rem;
 }
 
-.experiencia__profesional_encriptador__contenido img {
-    width: 752px;
-    max-width: 100%;
+.botones a {
+    text-decoration: none;
+    background-color: #2A7AE4;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: white;
+    border: solid .1rem blue;
+
 }
 
 .contacto {
