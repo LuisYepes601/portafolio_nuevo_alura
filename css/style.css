@@ -180,6 +180,7 @@
     margin-bottom: 1rem;
     color: var(--color_texto);
     text-align: center;
+    font-size: clamp(1.2rem, 3vw, 32px);
 }
 
 .formacion_academica__lista ul {
@@ -243,7 +244,8 @@
     font-weight: 700;
 }
 
-.experiencia__profesional_encriptador__contenido__titulo__subtitulo,.experiencia__profesional_juego__logica_texto__subtitulo {
+.experiencia__profesional_encriptador__contenido__titulo__subtitulo,
+.experiencia__profesional_juego__logica_texto__subtitulo {
     font-size: 14px;
     margin-top: .5rem;
     padding-bottom: 1rem;
@@ -252,25 +254,104 @@
 .botones {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem 0;
     gap: 1rem;
+
 }
 
 .botones a {
     text-decoration: none;
     background-color: #2A7AE4;
-    padding: 1rem;
+    padding: clamp(.5rem, 2vw, 1rem);
     border-radius: .5rem;
     color: white;
     border: solid .1rem blue;
+
+
 
 }
 
 .contacto {
     grid-area: contacto;
-    background-color: aqua;
+    background-color: var(--color-secundariio);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+.contacto img {
+    width: 464px;
+    max-width: 100%;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__formulario_titulo {
+    color: var(--color_texto);
+    padding: 1rem 0;
+    text-align: justify;
+    font-size: clamp(1.2rem, 3vw, 32px);
+
 }
 
 .footer {
     grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    background-color: var(--color_principal);
+}
+
+@media (max-width: 768px) {
+    .contenido {
+        background-color: aqua;
+    }
+
+    .header__menu_navegacion ul li:nth-child(2),
+    .header__menu_navegacion ul li:nth-child(3),
+    .header__menu_navegacion ul li:nth-child(4),
+    .header__menu_navegacion ul li:nth-child(5),
+    .header__menu_navegacion ul li:nth-child(6) {
+        display: none;
+    }
+
+    .header__menu_navegacion ul li:nth-child(1) {
+        margin-right: 1rem;
+    }
+
+    .skills ul,
+    .hobbies ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .botones {
+        justify-content: start;
+    }
+
+    .experiencia__profesional_encriptador__contenido,
+    .experiencia__profesional_juego__logica__contenido {
+        text-align: justify;
+    }
+
+    .contacto {
+        flex-direction: column;
+
+    }
+
+    .contacto img {
+        display: none;
+    }
+}
+
+@media (max-width:591px) {
+    .presentacion{
+        flex-direction: column-reverse;
+    }.presentacion_contenido li {
+        flex-wrap: wrap;
+    }
 }
