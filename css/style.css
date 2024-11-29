@@ -359,11 +359,13 @@
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 400px) {
 
     .hobbies ul li img,
     .skills ul li img {
-        width: 100px;
+        width: 200px;
+        max-width: 100%;
+
 
     }
 }
