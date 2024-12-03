@@ -272,12 +272,13 @@
 }
 
 .botones a {
-    text-decoration: none;
+   text-decoration: none;
     background-color: #2A7AE4;
-    padding: clamp(.5rem, 2vw, 1rem);
+    padding: clamp(.3rem, 2vw, .5rem);
     border-radius: .5rem;
     color: white;
     border: solid .1rem blue;
+    font-size: clamp(.8rem, 2vw, 16px);
 
 
 
@@ -377,7 +378,9 @@
 
     .presentacion_contenido li {
         flex-wrap: wrap;
-    }.formacion_academica__lista ul{
+    }
+
+    .formacion_academica__lista ul {
         flex-direction: column;
     }
 }
