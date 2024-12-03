@@ -77,8 +77,8 @@
     justify-content: space-between;
     padding: 1rem 1rem 3rem 1rem;
     font-family: var(--font);
-    
-    
+
+
 }
 
 .presentacion_contenido {
@@ -114,7 +114,7 @@
 .imagen_principal {
     width: 100%;
     max-width: 100%;
-    
+
 
 }
 
@@ -200,9 +200,12 @@
 }
 
 .formacion_academica__lista__titulos {
-    font-size: clamp(.5rem, 2.5vw, 1.3rem);
-}.formacion_academica__lista__parrafos{
-    font-size: clamp(.5rem, 2vw, .8rem);
+    font-size: clamp(.8rem, 2.5vw, 1.3rem);
+
+}
+
+.formacion_academica__lista__parrafos {
+    font-size: clamp(.6rem, 2vw, 1.2rem);
 }
 
 .formacion_academica__lista ul li img {
@@ -362,18 +365,20 @@
     .presentacion {
         flex-direction: column-reverse;
         gap: 2rem;
-        
+
     }
 
     .imagen_principal {
         max-width: 60%;
-        
-        
-        
+
+
+
     }
 
     .presentacion_contenido li {
         flex-wrap: wrap;
+    }.formacion_academica__lista ul{
+        flex-direction: column;
     }
 }
 
