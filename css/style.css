@@ -272,7 +272,7 @@
 }
 
 .botones a {
-   text-decoration: none;
+    text-decoration: none;
     background-color: #2A7AE4;
     padding: clamp(.3rem, 2vw, .5rem);
     border-radius: .5rem;
@@ -288,9 +288,11 @@
     grid-area: contacto;
     background-color: var(--color-secundariio);
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 1rem;
     padding-bottom: 5rem;
+    padding: 0 1rem 3rem 1rem;
 }
 
 .contacto img {
@@ -303,12 +305,73 @@
     flex-direction: column;
 }
 
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+
+
+
+
+}
+
+.name,
+.email {
+    margin-top: .5rem;
+    font-size: small;
+    font-weight: 700;
+
+}
+
+.inp_name,
+.inp_email {
+    padding: 1rem 0;
+    border: none;
+    border-radius: .2rem;
+    font-family: var(--font);
+    width: 100%;
+    max-width: 656px;
+    transition: border .1s;
+
+}
+
+.inp_email::placeholder,
+.inp_name::placeholder {
+    padding-left: 1rem;
+
+}
+
+.inp_name:focus,
+.inp_email:focus,
+.textarea:focus {
+    outline-color: #2A7AE4;
+}
+
+.textarea {
+    resize: both;
+    height: 200px;
+    max-height: 80%;
+    max-width: 656px;
+    border-radius: .2rem;
+    border: none;
+    font-family: var(--font);
+}
+
+.textarea::placeholder {
+    padding: 1rem;
+}
+
 .contacto__formulario_titulo {
     color: var(--color_texto);
     padding: 1rem 0;
     text-align: justify;
-    font-size: clamp(1.2rem, 3vw, 32px);
+    font-size: clamp(1.2rem, 2.5vw, 32px);
 
+}
+
+.contacto__formulario__subtitulo {
+    font-size: clamp(.7rem, 2vw, 16px);
 }
 
 .footer {
@@ -341,7 +404,9 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
-    }.skills ul li{
+    }
+
+    .skills ul li {
         flex-wrap: wrap;
     }
 
@@ -391,7 +456,7 @@
 
     .hobbies ul li img,
     .skills ul li img {
-        width: 116px;
+        width: 105px;
         max-width: 100%;
 
 
