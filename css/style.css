@@ -200,12 +200,12 @@
 }
 
 .formacion_academica__lista__titulos {
-    font-size: clamp(.8rem, 2.5vw, 1.3rem);
+    font-size: clamp(.9rem, 2.5vw, 1.3rem);
 
 }
 
 .formacion_academica__lista__parrafos {
-    font-size: clamp(.6rem, 2vw, 1.2rem);
+    font-size: clamp(.75rem, 2.5vw, 1.2rem);
 }
 
 .formacion_academica__lista ul li img {
