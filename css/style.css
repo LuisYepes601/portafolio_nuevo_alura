@@ -77,6 +77,8 @@
     justify-content: space-between;
     padding: 1rem 1rem 3rem 1rem;
     font-family: var(--font);
+    
+    
 }
 
 .presentacion_contenido {
@@ -110,8 +112,9 @@
 }
 
 .imagen_principal {
-    width: 360px;
+    width: 100%;
     max-width: 100%;
+    
 
 }
 
@@ -165,7 +168,7 @@
 
 .skills ul li img,
 .hobbies ul li img {
-    width: 176;
+    width: 176px;
     max-width: 100%;
 }
 
@@ -194,6 +197,12 @@
 
 .formacion_academica__lista li {
     text-align: start;
+}
+
+.formacion_academica__lista__titulos {
+    font-size: clamp(.5rem, 2.5vw, 1.3rem);
+}.formacion_academica__lista__parrafos{
+    font-size: clamp(.5rem, 2vw, .8rem);
 }
 
 .formacion_academica__lista ul li img {
@@ -352,6 +361,15 @@
 @media (max-width:591px) {
     .presentacion {
         flex-direction: column-reverse;
+        gap: 2rem;
+        
+    }
+
+    .imagen_principal {
+        max-width: 60%;
+        
+        
+        
     }
 
     .presentacion_contenido li {
@@ -364,7 +382,7 @@
     .hobbies ul li img,
     .skills ul li img {
         width: 200px;
-        max-width: 100%;
+
 
 
     }
